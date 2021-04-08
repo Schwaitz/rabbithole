@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block title %}Talents{% endblock %}
+{% block content %}
+
+<div id="header" class="row no-gutters">
+    <h1>Talents - {{talent_count}}</h1>
+</div>
+
+<div id="col-header" class="row no-gutters">
+
+    <div class="col-1">
+        <h4><b>Name</b></h4>
+    </div>
+
+
+</div>
+
+
+{% for t in talent_data %}
+<div class="row no-gutters">
+
+    <div class="col-1">
+        <p><a href="talents/{{t['name']}}">{{t['full_name']}}</a></p>
+    </div>
+
+</div>
+{%endfor%}
+
+{% endblock %}

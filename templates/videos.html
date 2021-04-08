@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+{% block title %}Videos{% endblock %}
+{% block content %}
+
+<div id="header" class="row no-gutters">
+    <h1>Videos - {{video_count}}</h1>
+</div>
+
+<div id="col-header" class="row no-gutters">
+
+    <div class="col-3">
+        <h4><b>Title</b></h4>
+    </div>
+
+    <div class="col-1">
+        <h4><b>ID</b></h4>
+    </div>
+
+    <div class="col-4">
+        <h4><b>Description</b></h4>
+    </div>
+
+    <div class="col-1">
+        <h4><b>Stats</b></h4>
+    </div>
+
+    <div class="col-auto">
+        <div>
+            <h4 style="width: 240px;"><b>Thumbnail</b></h4>
+        </div>
+    </div>
+
+</div>
+
+
+{% for v in video_data %}
+<div class="row video-row no-gutters">
+
+    <div class="col-3 video-col">
+        <p class="video-item video-title"><a href="https://www.youtube.com/watch?v={{v['video_id']}}">{{format_title(v.video_title)}}</a></p>
+    </div>
+
+    <div class="col-1 video-col">
+        <p class="video-item video-id" ><a href="videos/{{v['video_id']}}">{{v['video_id']}}</a></p>
+    </div>
+
+    <div class="col-4 video-col">
+        <p class="video-desc">{{cut_description(v.video_description)}}</p>
+    </div>
+
+    <div class="col-1 stat-col video-col">
+        <div class="row stat-row no-gutters">
+            <p class="col video-stat my-auto">Views: {{v['video_views']}}</p>
+        </div>
+
+        <div class="row stat-row no-gutters">
+            <p class="col video-stat my-auto">Likes: {{v['video_likes']}}</p>
+        </div>
+
+        <div class="row stat-row no-gutters">
+            <p class="col video-stat my-auto">Dislikes: {{v['video_dislikes']}}</p>
+        </div>
+
+        <div class="row stat-row no-gutters">
+            <p class="col video-stat my-auto">Comments: {{v['video_comments']}}</p>
+        </div>
+    </div>
+
+    <div class="col-auto video-col">
+        <img class="video-thumbnail" src="{{v['video_thumbnail_url']}}">
+    </div>
+</div>
+{%endfor%}
+
+{% endblock %}

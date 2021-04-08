@@ -1,0 +1,361 @@
+[
+  {
+    "name": "tokino",
+    "full_name": "Tokino Sora",
+    "aliases": [
+      "sora"
+    ]
+  },
+  {
+    "name": "azki",
+    "full_name": "Azki",
+    "aliases": []
+  },
+  {
+    "name": "roboco",
+    "full_name": "Roboco-san",
+    "aliases": []
+  },
+  {
+    "name": "sakura",
+    "full_name": "Sakura Miko",
+    "aliases": [
+      "miko"
+    ]
+  },
+  {
+    "name": "shirakami",
+    "full_name": "Shirakami Fubuki",
+    "aliases": [
+      "fubuki"
+    ]
+  },
+  {
+    "name": "natsuiro",
+    "full_name": "Natsuiro Matsuri",
+    "aliases": [
+      "matsuri"
+    ]
+  },
+  {
+    "name": "yozora",
+    "full_name": "Yozora Mel",
+    "aliases": [
+      "mel"
+    ]
+  },
+  {
+    "name": "akai",
+    "full_name": "Akai Haato",
+    "aliases": [
+      "haato",
+      "haachama"
+    ]
+  },
+  {
+    "name": "aki",
+    "full_name": "Aki Rosenthal",
+    "aliases": [
+      "rosenthal"
+    ]
+  },
+  {
+    "name": "minato",
+    "full_name": "Minato Aqua",
+    "aliases": [
+      "aqua"
+    ]
+  },
+  {
+    "name": "yuzuki",
+    "full_name": "Yuzuki Choco",
+    "aliases": [
+      "choco"
+    ]
+  },
+  {
+    "name": "nakiri",
+    "full_name": "Nakiri Ayame",
+    "aliases": [
+      "ayame"
+    ]
+  },
+  {
+    "name": "murasaki",
+    "full_name": "Murasaki Shion",
+    "aliases": [
+      "shion"
+    ]
+  },
+  {
+    "name": "oozora",
+    "full_name": "Oozora Subaru",
+    "aliases": [
+      "subaru"
+    ]
+  },
+  {
+    "name": "ookami",
+    "full_name": "Ookami Mio",
+    "aliases": [
+      "mio"
+    ]
+  },
+  {
+    "name": "nekomata",
+    "full_name": "Nekomata Okayu",
+    "aliases": [
+      "okayu"
+    ]
+  },
+  {
+    "name": "inugami",
+    "full_name": "Inugami Korone",
+    "aliases": [
+      "korone"
+    ]
+  },
+  {
+    "name": "shiranui",
+    "full_name": "Shiranui Flare",
+    "aliases": [
+      "flare"
+    ]
+  },
+  {
+    "name": "shirogane",
+    "full_name": "Shirogane Noel",
+    "aliases": [
+      "noel"
+    ]
+  },
+  {
+    "name": "houshou",
+    "full_name": "Houshou Marine",
+    "aliases": [
+      "marine"
+    ]
+  },
+  {
+    "name": "usada",
+    "full_name": "Usada Pekora",
+    "aliases": [
+      "pekora"
+    ]
+  },
+  {
+    "name": "uruha",
+    "full_name": "Uruha Rushia",
+    "aliases": [
+      "rushia"
+    ]
+  },
+  {
+    "name": "hoshimachi",
+    "full_name": "Hoshimachi Suisei",
+    "aliases": [
+      "suisei"
+    ]
+  },
+  {
+    "name": "amane",
+    "full_name": "Amane Kanata",
+    "aliases": [
+      "kanata"
+    ]
+  },
+  {
+    "name": "kiryu",
+    "full_name": "Kiryu Coco",
+    "aliases": [
+      "coco"
+    ]
+  },
+  {
+    "name": "tsunomaki",
+    "full_name": "Tsunomaki Watame",
+    "aliases": [
+      "watame"
+    ]
+  },
+  {
+    "name": "tokoyami",
+    "full_name": "Tokoyami Towa",
+    "aliases": [
+      "towa"
+    ]
+  },
+  {
+    "name": "himemori",
+    "full_name": "Himemori Luna",
+    "aliases": [
+      "luna"
+    ]
+  },
+  {
+    "name": "yukihana",
+    "full_name": "Yukihana Lamy",
+    "aliases": [
+      "lamy"
+    ]
+  },
+  {
+    "name": "momosuzu",
+    "full_name": "Momosuzu Nene",
+    "aliases": [
+      "nene"
+    ]
+  },
+  {
+    "name": "shishiro",
+    "full_name": "Shishiro Botan",
+    "aliases": [
+      "botan"
+    ]
+  },
+  {
+    "name": "omaru",
+    "full_name": "Omaru Polka",
+    "aliases": [
+      "polka"
+    ]
+  },
+  {
+    "name": "hanasaki",
+    "full_name": "Hanasaki Miyabi",
+    "aliases": [
+      "miyabi"
+    ]
+  },
+  {
+    "name": "kanade",
+    "full_name": "Kanade Izuru",
+    "aliases": [
+      "izuru"
+    ]
+  },
+  {
+    "name": "arurandeisu",
+    "full_name": "Arurandeisu",
+    "aliases": []
+  },
+  {
+    "name": "rikka",
+    "full_name": "Rikka",
+    "aliases": []
+  },
+  {
+    "name": "astel",
+    "full_name": "Astel Leda",
+    "aliases": [
+      "leda"
+    ]
+  },
+  {
+    "name": "kishido",
+    "full_name": "Kishido Temma",
+    "aliases": [
+      "temma"
+    ]
+  },
+  {
+    "name": "yukoku",
+    "full_name": "Yukoku Roberu",
+    "aliases": [
+      "roberu"
+    ]
+  },
+  {
+    "name": "kageyama",
+    "full_name": "Kageyama Shien",
+    "aliases": [
+      "shien"
+    ]
+  },
+  {
+    "name": "aragami",
+    "full_name": "Aragami Oga",
+    "aliases": [
+      "oga"
+    ]
+  },
+  {
+    "name": "ayunda",
+    "full_name": "Ayunda Risu",
+    "aliases": [
+      "risu"
+    ]
+  },
+  {
+    "name": "moona",
+    "full_name": "Moona Hoshinova",
+    "aliases": [
+      "hoshinova"
+    ]
+  },
+  {
+    "name": "airani",
+    "full_name": "Airani Iofifteen",
+    "aliases": [
+      "iofifteen"
+    ]
+  },
+  {
+    "name": "kureiji",
+    "full_name": "Kureiji Ollie",
+    "aliases": [
+      "ollie"
+    ]
+  },
+  {
+    "name": "anya",
+    "full_name": "Anya Melfissa",
+    "aliases": [
+      "melfissa"
+    ]
+  },
+  {
+    "name": "pavolia",
+    "full_name": "Pavolia Reine",
+    "aliases": [
+      "reine"
+    ]
+  },
+  {
+    "name": "mori",
+    "full_name": "Mori Calliope",
+    "aliases": [
+      "calliope",
+      "callie"
+    ]
+  },
+  {
+    "name": "takanashi",
+    "full_name": "Takanashi Kiara",
+    "aliases": [
+      "kiara"
+    ]
+  },
+  {
+    "name": "ninomae",
+    "full_name": "Ninomae",
+    "aliases": [
+      "ina'nis",
+      "ina"
+    ]
+  },
+  {
+    "name": "gawr",
+    "full_name": "Gawr Gura",
+    "aliases": [
+      "gura"
+    ]
+  },
+  {
+    "name": "watson",
+    "full_name": "Watson Amelia",
+    "aliases": [
+      "amelia"
+    ]
+  }
+]

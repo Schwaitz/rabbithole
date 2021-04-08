@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+{% block title %}Video{% endblock %}
+{% block content %}
+
+<div id="header" class="row no-gutters">
+    <h1>Video - <a href="../videos">[Back]</a></h1>
+</div>
+
+
+<div id="col-header" class="row no-gutters">
+
+    <div class="col-3">
+        <h4><b>Title</b></h4>
+    </div>
+
+    <div class="col-1">
+        <h4><b>ID</b></h4>
+    </div>
+
+    <div class="col-4">
+        <h4><b>Description</b></h4>
+    </div>
+
+    <div class="col-1">
+        <h4><b>Stats</b></h4>
+    </div>
+
+    <div class="col-auto">
+        <div>
+            <h4 style="width: 240px;"><b>Thumbnail</b></h4>
+        </div>
+    </div>
+
+</div>
+
+<div class="row video-row no-gutters">
+    <div class="col-3 video-col">
+        <p class="video-item video-title"><a href="https://www.youtube.com/watch?v={{video_id}}">{{format_title(video_title)}}</a></p>
+    </div>
+
+    <div class="col-1 video-col">
+        <p class="video-item video-id">{{video_id}}</p>
+    </div>
+
+    <div class="col-4 video-col">
+        <p class="video-desc">{{cut_description(video_description)}}</p>
+    </div>
+
+    <div class="col-1 stat-col video-col">
+        <div class="row stat-row no-gutters">
+            <p class="col video-stat my-auto">Views: {{video_views}}</p>
+        </div>
+
+        <div class="row stat-row no-gutters">
+            <p class="col video-stat my-auto">Likes: {{video_likes}}</p>
+        </div>
+
+        <div class="row stat-row no-gutters">
+            <p class="col video-stat my-auto">Dislikes: {{video_dislikes}}</p>
+        </div>
+
+        <div class="row stat-row no-gutters">
+            <p class="col video-stat my-auto">Comments: {{video_comments}}</p>
+        </div>
+    </div>
+
+    <div class="col-auto video-col">
+        <img class="video-thumbnail" src="{{video_thumbnail_url}}">
+    </div>
+</div>
+{% endblock %}

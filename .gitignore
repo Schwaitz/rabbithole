@@ -1,0 +1,13 @@
+.idea/
+__pycache__/
+setup/
+venv/
+
+app_config.py
+
+testing/
+
+*.pyc
+*.sock
+
+rabbithole.sh

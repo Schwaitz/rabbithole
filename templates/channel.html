@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+{% block title %}Channel{% endblock %}
+{% block content %}
+
+<div id="header" class="row no-gutters">
+    <h1>Channel - <a href="../channels">[Back]</a></h1>
+</div>
+
+
+<div id="col-header" class="row no-gutters">
+
+    <div class="col-1">
+        <h4><b>Thumbnail</b></h4>
+    </div>
+
+    <div class="col-2">
+        <h4><b>Title</b></h4>
+    </div>
+
+    <div class="col-2">
+        <h4><b>ID</b></h4>
+    </div>
+
+    <div class="col-5">
+        <h4><b>Description</b></h4>
+    </div>
+</div>
+
+<div class="row channel-row no-gutters">
+
+    <div class="col-1 channel-col">
+        <img class="channel-item" src="{{channel_thumbnail_url}}" style="width: 150px; height: 150px;">
+    </div>
+
+    <div class="col-2 channel-col">
+        <h4 class="channel-item"><a href="https://www.youtube.com/channel/{{channel_id}}">{{format_title(channel_title)}}</a></h4>
+    </div>
+
+    <div class="col-2 channel-col">
+        <p class="channel-item">{{channel_id}}</p>
+    </div>
+
+    <div class="col-5 channel-col" style="text-align: left;">
+        <p class="channel-desc">{{cut_channel_description(channel_description)}}</p>
+    </div>
+
+</div>
+{% endblock %}
