@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, render_template, json
+from flask import Flask, request, render_template, json
 import requests
 from html import unescape
 import string
@@ -7,7 +7,7 @@ import app_config as app_config
 
 app = Flask(__name__)
 
-app.config['TESTING'] = True
+app.config['TESTING'] = False
 app.config['SECRET_KEY'] = app_config.SECRET_KEY
 app.url_map.strict_slashes = False
 
@@ -57,7 +57,7 @@ def index():
 @app.route('/channels', methods=['GET'])
 def channels():
     params = {'format': 'json'}
-    r = requests.get(host + 'channels', params=params).json()
+    r = requests.get(host + '/channels', params=params).json()
     count = len(r)
     return render_template('channels.html', channel_data=r, channel_count=count)
 
@@ -65,7 +65,7 @@ def channels():
 @app.route('/channels/<id>', methods=['GET'])
 def channel(id):
     params = {'format': 'json'}
-    r = requests.get(host + 'channels/' + id + '/', params=params).json()
+    r = requests.get(host + '/channels/' + id + '/', params=params).json()
     return render_template('channel.html', channel_id=r['channel_id'], channel_title=r['channel_title'], channel_description=r['channel_description'], channel_thumbnail_url=r['channel_thumbnail_url'])
     # return r
 
@@ -73,7 +73,7 @@ def channel(id):
 @app.route('/videos', methods=['GET'])
 def videos():
     params = {'format': 'json'}
-    r = requests.get(host + 'videos', params=params).json()
+    r = requests.get(host + '/videos', params=params).json()
     count = len(r)
     return render_template('videos.html', video_data=r, video_count=count)
 
@@ -81,7 +81,7 @@ def videos():
 @app.route('/videos/<id>', methods=['GET'])
 def video(id):
     params = {'format': 'json'}
-    r = requests.get(host + 'videos/' + id + '/', params=params).json()
+    r = requests.get(host + '/videos/' + id + '/', params=params).json()
     player_fixed = unescape(r['video_player'])
     print(player_fixed)
     return render_template('video.html', video_id=r['video_id'], video_title=r['video_title'], video_description=r['video_description'],
@@ -115,7 +115,7 @@ def talent(name):
 
     if found:
         params = {'format': 'json'}
-        r = requests.get(host + 'videos', params=params).json()
+        r = requests.get(host + '/videos', params=params).json()
 
         matched_videos = []
         for v in r:
@@ -131,4 +131,4 @@ def talent(name):
 
 
 if __name__ == '__main__':
-    app.run(host='127.0.0.1', port=8080, debug=True)
+    app.run(host='127.0.0.1', port=8080, debug=False)
