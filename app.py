@@ -7,7 +7,7 @@ import app_config as app_config
 
 app = Flask(__name__)
 
-debug = True
+debug = False
 
 app.config['TESTING'] = debug
 app.config['SECRET_KEY'] = app_config.SECRET_KEY
