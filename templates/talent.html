@@ -1,10 +1,10 @@
 {% extends "layout.html" %}
-{% block title %}Talent - {{name}}{% endblock %}
+{% block title %}Talent - {{data.name}}{% endblock %}
 {% block content %}
 
 
 <div id="header" class="row no-gutters">
-    <h1>{{name}} - <a href="../talents">[Back]</a></h1>
+    <h1>{{data.name}} - <a href="../talents">[Back]</a></h1>
 </div>
 
 <h3>Videos: {{match_count}}</h3>
@@ -36,7 +36,7 @@
 </div>
 
 
-{% for v in matched_videos %}
+{% for v in data.videos %}
 <div class="row video-row no-gutters">
 
     <div class="col-3 video-col">
