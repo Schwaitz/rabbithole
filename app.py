@@ -7,9 +7,7 @@ import app_config as app_config
 
 app = Flask(__name__)
 
-debug = False
-
-app.config['TESTING'] = debug
+app.config['TESTING'] = app_config.debug
 app.config['SECRET_KEY'] = app_config.SECRET_KEY
 app.url_map.strict_slashes = False
 
@@ -122,4 +120,4 @@ def talent(name):
 
 
 if __name__ == '__main__':
-    app.run(host='127.0.0.1', port=8080, debug=debug)
+    app.run(host='127.0.0.1', port=8080, debug=app_config.debug)
